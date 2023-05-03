@@ -25,5 +25,5 @@ end
 if _G.whitelisted==true then
 else
  
-game.Players.LocalPlayer:Kick(a.."成功值入熊猫烧香病毒，自力更生")
+game.Players.LocalPlayer:Kick(a.."成功值入女鬼病毒，自力更生")
 end
