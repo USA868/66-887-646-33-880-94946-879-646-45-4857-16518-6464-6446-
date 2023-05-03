@@ -1,0 +1,29 @@
+repeat
+    task.wait()
+until game.Players.LocalPlayer.Character~=nil;
+local a=tostring(game.Players.LocalPlayer.Character);
+if a==""then
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+end
+if a==""then
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+end
+if a==""then
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+end
+if a==""then
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+end
+if _G.whitelisted==true then
+else
+ 
+game.Players.LocalPlayer:Kick(a.."成功值入熊猫烧香病毒，自力更生")
+end
