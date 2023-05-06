@@ -76,17 +76,17 @@ function buyswords()
                 if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
                     local oh1 = "buyAllSwords"
                     local oh2 = {
-                        "Ground",
-                        "Astral Island",
-                        "Space Island",
-                        "Tundra Island",
-                        "Eternal Island",
-                        "Sandstorm",
-                        "Thunderstorm",
-                        "Ancient Inferno Island",
-                        "Midnight Shadow Island",
-                        "Mythical Souls Island",
-                        "Winter Wonder Island"
+                        "地",
+                        "阿斯特拉岛",
+                        "太空岛",
+                        "苔原岛",
+                        "永恒之岛",
+                        "沙尘暴",
+                        "雷雨",
+                        "古代地狱岛",
+                        "午夜阴影岛",
+                        "神话灵魂岛",
+                        "冬季奇妙岛"
                     }
                     for i = 1, #oh2 do
                         game:GetService("Players").LocalPlayer.ninjaEvent:FireServer(oh1, oh2[i])
@@ -108,9 +108,9 @@ function buybelts()
                 if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
                     local oh1 = "buyAllBelts"
                     local oh2 = {
-                        "Ground",
-                        "Astral Island",
-                        "Space Island",
+                        "地",
+                        "阿斯特拉岛",
+                        "太空岛",
                         "Tundra Island",
                         "Eternal Island",
                         "Sandstorm",
@@ -375,17 +375,17 @@ function chi()
         end
     )
 end
-main:AddLabel("Other Main Stuff")
+main:AddLabel("其他主要材料")
 main:AddButton(
     {
-        Name = "Unlock all elements",
+        Name = "解锁所有元素",
         Callback = function()
-            game.ReplicatedStorage.rEvents.elementMasteryEvent:FireServer("Frost")
-            game.ReplicatedStorage.rEvents.elementMasteryEvent:FireServer("Inferno")
-            game.ReplicatedStorage.rEvents.elementMasteryEvent:FireServer("Lightning")
-            game.ReplicatedStorage.rEvents.elementMasteryEvent:FireServer("Electral Chaos")
-            game.ReplicatedStorage.rEvents.elementMasteryEvent:FireServer("Masterful Wrath")
-            game.ReplicatedStorage.rEvents.elementMasteryEvent:FireServer("Shadow Charge")
+            game.ReplicatedStorage.rEvents.elementMasteryEvent:FireServer("严寒天气")
+            game.ReplicatedStorage.rEvents.elementMasteryEvent:FireServer("无法控制的大火")
+            game.ReplicatedStorage.rEvents.elementMasteryEvent:FireServer("闪电")
+            game.ReplicatedStorage.rEvents.elementMasteryEvent:FireServer("电子混沌")
+            game.ReplicatedStorage.rEvents.elementMasteryEvent:FireServer("精通愤怒")
+            game.ReplicatedStorage.rEvents.elementMasteryEvent:FireServer("影子电荷")
         end
     }
 )
@@ -826,7 +826,7 @@ sellpets:AddToggle(
 )
 sellpets:AddToggle(
     {
-        Name = "Auto Sell Omega",
+        Name = "自动销售欧米茄",
         Default = false,
         Callback = function(state)
             autosellomega = state
@@ -838,7 +838,7 @@ sellpets:AddToggle(
 )
 sellpets:AddToggle(
     {
-        Name = "Auto Sell Elite",
+        Name = "汽车销售精英",
         Default = false,
         Callback = function(state)
             autosellelite = state
@@ -863,7 +863,7 @@ sellpets:AddToggle(
 
 sellpets:AddToggle(
     {
-        Name = "Auto Sell Rising Hero",
+        Name = "汽车销售崛起英雄",
         Default = false,
         Callback = function(state)
             autosellrising = state
@@ -1060,7 +1060,7 @@ end
 
 boss:AddDropdown(
     {
-        Name = "Choose Boss",
+        Name = "选择老板",
         Default = SelectedBoss,
         Options = bosses,
         Callback = function(selected)
@@ -1105,7 +1105,7 @@ end
 
 boss:AddToggle(
     {
-        Name = "Farm Boss",
+        Name = "农场老板",
         Default = false,
         Callback = function(state)
             autoboss = state
@@ -1124,7 +1124,7 @@ end
 teleports:AddLabel("世界传送")
 teleports:AddDropdown(
     {
-        Name = "Select World",
+        Name = "选择世界",
         Default = "",
         Options = Islands,
         Callback = function(selected)
@@ -1136,7 +1136,7 @@ teleports:AddDropdown(
 teleports:AddLabel("光训练")
 teleports:AddButton(
     {
-        Name = "Mystical Waters",
+        Name = "神秘的水域",
         Callback = function()
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
                 CFrame.new(347.74881, 8824.53809, 114.271019)
@@ -1145,7 +1145,7 @@ teleports:AddButton(
 )
 teleports:AddButton(
     {
-        Name = "Sword of Legends",
+        Name = "传奇之剑",
         Callback = function()
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
                 CFrame.new(1834.15967, 38.704483, -141.375641)
@@ -1154,7 +1154,7 @@ teleports:AddButton(
 )
 teleports:AddButton(
     {
-        Name = "Elemental Tornado",
+        Name = "元素龙卷风",
         Callback = function()
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
                 CFrame.new(299.758484, 30383.0957, -90.1542206)
@@ -1164,7 +1164,7 @@ teleports:AddButton(
 teleports:AddLabel("Evil Training Areas")
 teleports:AddButton(
     {
-        Name = "Lava Pit",
+        Name = "熔岩坑",
         Callback = function()
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
                 CFrame.new(-116.631485, 12952.5381, 271.14624)
@@ -1173,7 +1173,7 @@ teleports:AddButton(
 )
 teleports:AddButton(
     {
-        Name = "Tornado",
+        Name = "龙卷风",
         Callback = function()
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
                 CFrame.new(325.641174, 16872.0938, -9.9906435)
@@ -1182,7 +1182,7 @@ teleports:AddButton(
 )
 teleports:AddButton(
     {
-        Name = "Swords of Ancients",
+        Name = "古人之剑",
         Callback = function()
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
                 CFrame.new(648.365662, 38.704483, 2409.72266)
@@ -1191,7 +1191,7 @@ teleports:AddButton(
 )
 misc:AddToggle(
     {
-        Name = "Fast Shuriken",
+        Name = "快速Shuriken",
         Default = false,
         Callback = function(x)
             getgenv().fastshuriken = x
@@ -1218,7 +1218,7 @@ misc:AddToggle(
 )
 misc:AddToggle(
     {
-        Name = "Slow Shuriken",
+        Name = "慢速Shuriken",
         Default = false,
         Callback = function(x)
             getgenv().slowshuriken = x
@@ -1245,7 +1245,7 @@ misc:AddToggle(
 )
 misc:AddToggle(
     {
-        Name = "Invisible",
+        Name = "看不见的",
         Default = false,
         Callback = function()
             getgenv().invisible = true
@@ -1265,7 +1265,7 @@ misc:AddToggle(
 )
 misc:AddButton(
     {
-        Name = "Get Max Jumps",
+        Name = "获得最大跳跃次数",
         Callback = function()
             while wait(.0001) do
                 game.Players.LocalPlayer.multiJumpCount.Value = "50"
@@ -1276,7 +1276,7 @@ misc:AddButton(
 
 misc:AddButton(
     {
-        Name = "Unlock Gamepasses",
+        Name = "解锁游戏通行证",
         Callback = function() 
             for i,v in next, game:GetService("ReplicatedStorage").gamepassIds:GetChildren() do
                     v.Parent = game:GetService("Players").LocalPlayer.ownedGamepasses
