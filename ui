@@ -40,7 +40,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     
     WindowTitle.Name = "WindowTitle"
     WindowTitle.Parent = Window
-    WindowTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    WindowTitle.BackgroundColor3 = Color3.fromRGB(255, 5, 5)
     WindowTitle.BackgroundTransparency = 1.000
     WindowTitle.BorderColor3 = Color3.fromRGB(27, 42, 53)
     WindowTitle.BorderSizePixel = 0
@@ -49,13 +49,13 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     WindowTitle.ZIndex = 4
     WindowTitle.Font = Enum.Font.GothamSemibold
     WindowTitle.Text = nofdebug.Title
-    WindowTitle.TextColor3 = Color3.fromRGB(220, 220, 220)
+    WindowTitle.TextColor3 = Color3.fromRGB(225, 0, 0)
     WindowTitle.TextSize = 12.000
     WindowTitle.TextXAlignment = Enum.TextXAlignment.Left
     
     WindowDescription.Name = "WindowDescription"
     WindowDescription.Parent = Window
-    WindowDescription.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    WindowDescription.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
     WindowDescription.BackgroundTransparency = 1.000
     WindowDescription.BorderColor3 = Color3.fromRGB(27, 42, 53)
     WindowDescription.BorderSizePixel = 0
@@ -135,7 +135,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
         
         Check.Name = "Check"
         Check.Parent = Window
-        Check.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        Check.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
         Check.BackgroundTransparency = 1.000
         Check.BorderSizePixel = 0
         Check.Position = UDim2.new(0, 28, 0, 76)
